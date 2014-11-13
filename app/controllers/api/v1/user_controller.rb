@@ -1,5 +1,5 @@
 
-class API::UserController < ApplicationController
+class API::V1::UserController < ApplicationController
   def index
     @user = User.all
     respond_to do |format|
