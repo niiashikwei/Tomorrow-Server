@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141112075151) do
+ActiveRecord::Schema.define(version: 20141114060630) do
 
   create_table "users", force: true do |t|
     t.string   "name"
     t.integer  "age"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "profile_pic_url", default: "http://therecordingrevolution.com/wordpress/wp-content/uploads/2014/05/da-vinci-profile.jpg"
   end
 
 end
