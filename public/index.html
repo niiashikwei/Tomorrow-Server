@@ -10,12 +10,11 @@
 	<body>
 		<div class="logo-text fade-in">Tomorrow</div>
 		<audio controls>
-			<source src="sound/The%20St.%20Louis%20Blues.mp3" type="audio/mp3">
+			<source src="sound/st.%20louis%20blues.mp3" type="audio/mp3">
 			Your browser does not support the audio tag.
 		</audio>
 		<script>
 			$('audio').bind('canplay', function() {
-				this.currentTime = 188;
 				this.play();
 				$(this).hide();
 			});
