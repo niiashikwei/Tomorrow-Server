@@ -9,18 +9,10 @@
 
 	<body>
 		<div class="logo-text fade-in">Tomorrow</div>
-		<audio controls>
-			<source src="sound/st.%20louis%20blues.mp3" type="audio/mp3">
+		<audio  autoplay="autoplay" loop="loop" hidden controls>
+			<source src="sound/st.%20louis%20blues.mp3"type="audio/mp3">
 			Your browser does not support the audio tag.
 		</audio>
-		<script>
-			$(document).ready(function(){
-				$('audio').bind('canplay', function() {
-					$(this).play();
-					$(this).hide();
-				});
-			})
-		</script>
 	</body>
 
 </html>
