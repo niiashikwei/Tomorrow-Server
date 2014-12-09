@@ -16,7 +16,7 @@
 		<script>
 			$(document).ready(function(){
 				$('audio').bind('canplay', function() {
-					this.play();
+					$(this).play();
 					$(this).hide();
 				});
 			})
