@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141206003348) do
+ActiveRecord::Schema.define(version: 20141209184147) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20141206003348) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "profile_pic_url", default: "http://therecordingrevolution.com/wordpress/wp-content/uploads/2014/05/da-vinci-profile.jpg"
+    t.string   "current_city"
   end
 
 end
