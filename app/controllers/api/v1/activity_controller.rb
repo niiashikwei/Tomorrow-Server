@@ -8,7 +8,11 @@ class API::V1::ActivityController < ApplicationController
   end
 
   def create
-    Activity.create(activity_params)
+    @activity = Activity.new(activity_params)
+    @activity.save!
+    respond_to do |format|
+      format.json { render :json => @activity }
+    end
   end
 
   private

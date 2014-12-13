@@ -8,7 +8,11 @@ class API::V1::UserController < ApplicationController
   end
 
   def create
-    User.create(user_params)
+    @user = User.new(user_params)
+    @user.save!
+    respond_to do |format|
+      format.json { render :json => @user }
+    end
   end
 
   private
